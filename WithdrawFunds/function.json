@@ -1,0 +1,15 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "eventHubMessages",
+      "direction": "in",
+      "eventHubName": "transferbaacc-2157cc9e0c",
+      "connection": "AZURE_EVENTHUB_CONNECTIONSTRING",
+      "cardinality": "many",
+      "consumerGroup": "$Default",
+      "dataType": "string"
+    }
+  ],
+  "scriptFile": "../dist/WithdrawFunds/index.js"
+}
